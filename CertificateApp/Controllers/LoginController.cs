@@ -49,7 +49,7 @@ namespace CertificateApp.Controllers
             else
             {
                 @TempData["response"] = response;
-                return RedirectToAction("Index");
+                return RedirectToAction("RegisterView");
             }
         }
         public async Task <IActionResult> OTPView()
