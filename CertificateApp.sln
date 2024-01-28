@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertificateApp", "CertificateApp\CertificateApp.csproj", "{21A9331F-9B75-49E0-A0B1-C54E6E16D148}"
+	ProjectSection(ProjectDependencies) = postProject
+		{05C49E25-3F60-45C6-99BF-C5C49D692391} = {05C49E25-3F60-45C6-99BF-C5C49D692391}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginService", "LoginService\LoginService.csproj", "{05C49E25-3F60-45C6-99BF-C5C49D692391}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21A9331F-9B75-49E0-A0B1-C54E6E16D148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21A9331F-9B75-49E0-A0B1-C54E6E16D148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21A9331F-9B75-49E0-A0B1-C54E6E16D148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21A9331F-9B75-49E0-A0B1-C54E6E16D148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05C49E25-3F60-45C6-99BF-C5C49D692391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05C49E25-3F60-45C6-99BF-C5C49D692391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05C49E25-3F60-45C6-99BF-C5C49D692391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05C49E25-3F60-45C6-99BF-C5C49D692391}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6C41979-A6C9-42E3-9B36-BAC8E8573411}
+	EndGlobalSection
+EndGlobal

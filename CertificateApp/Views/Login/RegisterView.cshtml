@@ -1,0 +1,39 @@
+﻿@model LoginService.Models.AuthModels.RegisterUser;
+@{
+    ViewData["Title"] = "Registration Page";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
+<div class="row">
+
+    <div class="col-md-4 loginbox glasseffect">
+        <h1 style="color: black">Sign Up</h1>
+        <p style="color: red"> @TempData["Message"] </p>
+        <form asp-action="Register" asp-controller="Login" method="post">
+            <img src="~/lib/Images/Binge Logo.png" class="mb-5" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="username" class="control-label"> Username</label>
+                <input asp-for="username" class="form-control text-black" required />
+                <span asp-validation-for="username" class="text-danger"> </span>
+            </div>
+            <div class="form-group">
+                <label asp-for="password" class="control-label"> Password</label>
+                <input asp-for="password" class="form-control text-black" required type="password" />
+                <span asp-validation-for="password" class="text-danger"> </span>
+            </div>
+            <div class="form-group">
+                <label asp-for="email" class="control-label"> Email Address</label>
+                <input asp-for="email" class="form-control text-black" required type="email" />
+                <span asp-validation-for="email" class="text-danger"> </span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+            <br />
+            <div>
+                <a asp-controller="Login" asp-action="Index" class="btn btn-danger">Back</a>
+            </div>
+        </form>
+    </div>
+</div>

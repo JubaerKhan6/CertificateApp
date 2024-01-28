@@ -1,0 +1,34 @@
+﻿@model LoginService.Models.AuthModels.OneTimePassword;
+@{
+    ViewData["Title"] = "OTP";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
+<div class="row">
+
+    <div class="col-md-4 loginbox glasseffect">
+        <h1 style="color: black">OTP</h1>
+        <p style="color: red"> @TempData["response"] </p>
+        <form asp-action="OTPVerification" asp-controller="Login" method="post">
+            <img src="~/lib/Images/Binge Logo.png" class="mb-5" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Otp" class="control-label"> One time password</label>
+                <input asp-for="Otp" class="form-control text-black" required />
+                <span asp-validation-for="Otp" class="text-danger"> </span>
+              
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Log In" class="btn btn-primary" />
+                </br>
+              
+            </div>
+
+            <br />
+            <div>
+                <a asp-controller="Login" asp-action="Index" class="btn btn-danger">Back</a>
+            </div>
+        </form>
+    </div>
+</div>
